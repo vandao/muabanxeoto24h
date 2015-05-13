@@ -1,0 +1,10 @@
+
+                        <tr id="<?php echo $item->id; ?>">
+                            <td><?php echo $item->id; ?></td>
+                            <td>
+                            	<a href="#" class="resource-name"><?php echo $item->name; ?></a>
+                            </td>
+                            <td><?php echo $item->PermissionResourceGroup->name; ?></td>
+                            <td><?php echo $item->controller_name; ?></td>
+                            <td><?php echo $item->action_name; ?></td>
+                        </tr>
