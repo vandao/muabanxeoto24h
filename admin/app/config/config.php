@@ -5,8 +5,8 @@ return new \Phalcon\Config(array(
         'host'             => 'localhost',
         'username'         => 'root',
         'password'         => 'password',
-        'dbname'           => 'learning_english',
-        'dbnameEmailQueue' => 'email_queue',
+        'dbname'           => 'muabanxeoto',
+        //'dbnameEmailQueue' => 'email_queue',
     ),
     'application' => array(
         'controllersDir'   => __DIR__ . '/../../app/controllers/',
@@ -20,15 +20,15 @@ return new \Phalcon\Config(array(
         'baseUri'          => '/',
     ),
     'upload' => array(
-        'dataDir'      => '/home/web/data/learning-english/',
-        'uploadDir'    => '/home/web/data/learning-english/uploads',
+        'dataDir'      => 'D:/web/data/muabanxeoto/',
+        'uploadDir'    => 'D:/web/data/muabanxeoto/uploads',
         'uploadUri'    => '/uploads',
         'tmpDir'       => 'tmp',
     ),
     'url' => array(
-        'frontend' => 'http://learning-english/',
-        'backend'  => 'http://learning-english.admin/',
-        'api'      => 'http://learning-english.api/',
+        'frontend' => 'http://dev.muabanxeoto24h.com/',
+        'backend'  => 'http://dev.admin.muabanxeoto24h.com/',
+        'api'      => 'http://dev.api.muabanxeoto24h.com/',
     ),
     'permission' => array(
         'superAdminId' => 1,

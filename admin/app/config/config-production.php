@@ -5,12 +5,18 @@ return new \Phalcon\Config(array(
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
         'username'    => 'root',
-        'password'    => 'password',
-        'dbname'      => 'learning_english',
+        'password'    => 'vandao0',
+        'dbname'      => 'muabanxeoto',
+    ),
+    'upload' => array(
+        'dataDir'      => '/home/web/data/muabanxeoto/',
+        'uploadDir'    => '/home/web/data/muabanxeoto/uploads',
+        'uploadUri'    => '/uploads',
+        'tmpDir'       => 'tmp',
     ),
     'url' => array(
-        'frontend' => 'http://learning.englishcrush.com/',
-        'backend'  => 'http://learning.admin.affiliate.englishcrush.com/',
-        'api'      => 'http://learning.api.affiliate.englishcrush.com/',
+        'frontend' => 'http://muabanxeoto24h.com/',
+        'backend'  => 'http://admin.muabanxeoto24h.com/',
+        'api'      => 'http://api.admin.muabanxeoto24h.com/',
     )
 ));
