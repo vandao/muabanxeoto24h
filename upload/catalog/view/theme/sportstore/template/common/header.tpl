@@ -270,22 +270,30 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 	<!-- Shopping cart & menu -->
 	
 	<div class="float-right">
+		<!-- Van Dao -->
+		
+		<?php if ($contact_status == '1') : ?>
+		<!-- Contact -->
+		
+		<!-- Van Dao -->
+		<h3 class="white" style="padding-top:10px; margin-right: 10px">
+ 		<?php if (! empty ( $gsm )) {	?>
+		<!-- GSM --><div style="padding-top: 5px;">gsm: <span class="custom-orange"><?php	echo $gsm; ?></span></div>
+		<?php	} ?>
+ 		<?php if (! empty ( $skype )) {	?> 
+		<!-- Skype --><div style="padding-top: 5px;">skype: <span class="custom-orange"><?php echo $skype; ?></span></div>
+		<?php	} ?>
+ 		<?php if (! empty ( $email )) {	?> 
+		<!-- mail --><div style="padding-top: 5px;">mail: <span class="custom-orange"><?php echo $email; ?></span></div>
+		<?php	} ?>
+ 		<?php if (! empty ( $fax )) {	?>
+		<!-- fax --><div style="padding-top: 5px;">hotline: <span class="custom-orange"><?php echo $fax; ?></span></div>
+		<?php	} ?>
+		</h3>
 	
-		<?php echo $cart; ?>
 		
-		<!-- Menu -->
-		
-		<ul id="menu" class="float-right">
-		
-			<li><a href="<?php echo $home; ?>" class="grey-30"><?php echo $text_home; ?></a></li>
-			<li><a href="<?php echo $wishlist; ?>" class="grey-30"><?php echo $text_wishlist; ?></a></li>
-			<li><a href="<?php echo $account; ?>" class="grey-30"><?php echo $text_account; ?></a></li>
-			<li><a href="<?php echo $shopping_cart; ?>" class="grey-30"><?php echo $text_shopping_cart; ?></a></li>
-			<li><a href="<?php echo $checkout; ?>" class="grey-30"><?php echo $text_checkout; ?></a></li>
-		
-		</ul>
-		
-		<!-- End menu -->
+		<!-- End contact -->
+		<?php endif; ?>
 	
 	</div>
 	
@@ -360,13 +368,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <div id="submenu" class="set-size-grid box-shadow">
 		
 	<!-- Welcome text -->
-		
-	<div class="welcome-text float-left">
 	
-		<?php if (!$logged) { echo $text_welcome; } else { echo $text_logged; } ?>
-	
-	</div>
-	
+	<!-- Van Dao -->
+
 	<!-- End welcome text -->
 	
 	<!-- Search -->

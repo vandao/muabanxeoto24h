@@ -29,25 +29,25 @@
             <div class="vfclear"></div>
             <div class="vrow"><img src="<?php echo $image_path ?>/mvctotal.png"></div>
             <div class="vfclear"></div>
-            <div class="vrow"><img src="<?php echo $image_path ?>/online.png"></div>
+            <div class="vrow"></div>
             <div class="vfclear"></div>
           </div>
           <div class="vstats_title vfleft valeft">
-            <div class="vrow"><?php echo $today_title ?></div>
+            <div class="vrow">Hôm nay</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $yesterday_title ?></div>
+            <div class="vrow">Hôm qua</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $week_title ?></div>
+            <div class="vrow">Tuần này</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $lastWeek_title ?></div>
+            <div class="vrow">Tuần trước</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $month_title ?></div>
+            <div class="vrow">Trong tháng</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $year_title ?></div>
+            <div class="vrow">Trong năm</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $allday_title ?></div>
+            <div class="vrow">Tổng số</div>
             <div class="vfclear"></div>
-            <div class="vrow"><?php echo $online_title ?></div>
+            <div class="vrow"></div>
             <div class="vfclear"></div>
           </div>
           <div class="vstats_number varight">
@@ -58,7 +58,7 @@
             <div class="vrow"><?php echo $month_visitor ?></div>
             <div class="vrow"><?php echo $year_visitor ?></div>
             <div class="vrow"><?php echo $total_visitor ?></div>
-            <div class="vrow"><?php echo $online_visitor; ?></div>
+            <div class="vrow"></div>
           </div>
           <div class="vfclear"></div>
         </div>

@@ -63,7 +63,8 @@
 		          <?php } ?>
 		        </p>
 		        <?php } ?>
-		        <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+		        <!-- VAN DAO -->
+		        <a onclick="window.location.href='<?php echo $product['href']; ?>'" class="button"><span><?php echo $button_cart; ?></span></a>
 		      </li>
 				<!-- End item -->
 		      <?php } ?>

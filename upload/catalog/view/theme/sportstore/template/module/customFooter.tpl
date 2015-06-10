@@ -35,7 +35,7 @@ if($this->config->get('about_us_image_status') == '1'){
 		<!-- Contact -->
 		
 		<div class="grid-4 float-left">
-			
+			<!-- Van Dao -->
      		<?php if (! empty ( $gsm )) {	?> 
 			<!-- GSM --><h3 class="white">gsm: <span class="custom-orange"><?php	echo $gsm; ?></span></h3>
 			<?php	} ?>
@@ -46,10 +46,8 @@ if($this->config->get('about_us_image_status') == '1'){
 			<!-- mail --><h3 class="white">mail: <span class="custom-orange"><?php echo $email; ?></span></h3>
 			<?php	} ?>
      		<?php if (! empty ( $fax )) {	?> 
-			<!-- fax --><h3 class="white">fax: <span class="custom-orange"><?php echo $fax; ?></span></h3>
+			<!-- fax --><h3 class="white">hotline: <span class="custom-orange"><?php echo $fax; ?></span></h3>
 			<?php	} ?>			
-			
-			<p style="padding-top:11px"><span class="grey-50">Contact with us or </span> &nbsp;&nbsp;<a href="index.php?route=information/contact" class="button-green"><span>Fill in the Form</span></a></p>
 		
 		</div>
 		

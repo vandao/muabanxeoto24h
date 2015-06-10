@@ -140,6 +140,13 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$this->template = 'default/template/common/header.tpl';
 		}
+
+		// VAN DAO CONTACT COLUMN
+		$this->data ['contact_status'] = $this->config->get ( 'contact_status' );
+		$this->data ['gsm'] = $this->config->get ( 'gsm' );
+		$this->data ['email'] = $this->config->get ( 'email' );
+		$this->data ['skype'] = $this->config->get ( 'skype' );
+		$this->data ['fax'] = $this->config->get ( 'fax' );
 		
     	$this->render();
 	} 	

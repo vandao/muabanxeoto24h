@@ -27,7 +27,7 @@ a img { border:0; }
 
 body { font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:18px; }
 a { text-decoration:none;line-height:18px; }
-h1, h2, h3, h4, h5, h6 { font-family:Francois One;font-weight:normal;font-size:20px; }
+h1, h2, h3, h4, h5, h6 { font-family:Arial, Helvetica, sans-serif;font-weight:normal;font-size:20px; }
 div#content h1, div#content h2 { font-size:17px;padding:15px 0px; }
 
 /* extra classes for positioning available elements */
@@ -63,10 +63,10 @@ div#content h1, div#content h2 { font-size:17px;padding:15px 0px; }
 
 /* Buttons */
 
-.button-green { font-family:Francois One;height:23px;display:inline-block;color:#fff;font-size:13px;text-shadow: 1px 1px 1px rgba(0,0,0,0.25);cursor:pointer; }
+.button-green { font-family:Arial, Helvetica, sans-serif;height:23px;display:inline-block;color:#fff;font-size:13px;text-shadow: 1px 1px 1px rgba(0,0,0,0.25);cursor:pointer; }
 .button-green span { display:block;height:21px;padding:2px 13px 0px 12px;background:url(../images/border.png) top left repeat-x, url(../images/bg-categories.png);-pie-background:url(catalog/view/theme/sportstore/images/border.png) top left repeat-x, url(catalog/view/theme/sportstore/images/bg-categories.png);position:relative;border-radius:15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;behavior: url(catalog/view/theme/sportstore/js/PIE.htc);cursor:pointer;  }
 
-.button { font-family:Francois One;height:23px;display:inline-block;color:#fff;font-size:13px;text-shadow: 1px 1px 1px rgba(0,0,0,0.25);border:none;cursor:pointer; }
+.button { font-family:Arial, Helvetica, sans-serif;height:23px;display:inline-block;color:#fff;font-size:13px;text-shadow: 1px 1px 1px rgba(0,0,0,0.25);border:none;cursor:pointer; }
 .button span { display:block;height:21px;padding:2px 13px 0px 12px;background:url(../images/border.png) top left repeat-x, url(../images/bg-categories.png);-pie-background:url(catalog/view/theme/sportstore/images/border.png) top left repeat-x, url(catalog/view/theme/sportstore/images/bg-categories.png);position:relative;border-radius:15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;behavior: url(catalog/view/theme/sportstore/js/PIE.htc);cursor:pointer;  }
 
 .buttons { overflow: auto;padding: 6px;margin-bottom: 10px;margin-top:10px;}
@@ -76,7 +76,7 @@ div#content h1, div#content h2 { font-size:17px;padding:15px 0px; }
 
 /* Fonts */
 
-.google-font { font-family:Francois One; }
+.google-font { font-family:Arial, Helvetica, sans-serif; }
 
 /* Top bar */
 
@@ -162,7 +162,7 @@ div#top #cart .content .checkout .button { margin-left:5px;font-size:13px; }
 div#top ul#menu { clear:both;height:51px;background:url(../images/bg-menu.png) top left repeat-x;margin:0px 10px 0px 0px;font-size:15px; }
 div#top ul#menu li { float:left;width:auto;padding:16px 3px 0px 26px; }
 div#top ul#menu li:first-child { padding-left:0px; }
-div#top ul#menu li a { font-size:15px;font-family:Francois One; }
+div#top ul#menu li a { font-size:15px;font-family:Arial, Helvetica, sans-serif; }
 
 /* Categories */
 
@@ -170,7 +170,7 @@ div#categories { position:relative;height:51px;border-radius:3px;-webkit-border-
 div#categories > ul { width:100%;height:100%;background:url(../images/border.png) top left repeat-x, url(../images/bg-categories.png);-pie-background:url(catalog/view/theme/sportstore/images/border.png) top left repeat-x, url(catalog/view/theme/sportstore/images/bg-categories.png);border-radius:3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;behavior: url(catalog/view/theme/sportstore/js/PIE.htc); }
 div#categories ul li { float:left;width:auto;position:relative;height:38px;padding:12px 12px 0px 12px;margin:5px 0px -20px 8px;border-radius:3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;behavior: url(catalog/view/theme/sportstore/js/PIE.htc); }
 div#categories ul li:hover, div#categories ul li.active { background:#2b2b2b; }
-div#categories ul li a { display:block;height:34px;color:#fff;font-size:17px;font-family:Francois One;text-shadow: 1px 1px 1px rgba(0,0,0,0.25); }
+div#categories ul li a { display:block;height:34px;color:#fff;font-size:17px;font-family:Arial, Helvetica, sans-serif;text-shadow: 1px 1px 1px rgba(0,0,0,0.25); }
 div#categories ul li div { position:absolute;display:none;}
 
 div#categories ul li.standard div { background:#2b2b2b;border:3px solid #73a902;border-top:none;border-radius:0px 0px 5px 5px;-webkit-border-radius: 0px 0px 5px 5px;-moz-border-radius: 0px 0px 5px 5px;behavior: url(catalog/view/theme/sportstore/js/PIE.htc);margin:0px 0px 0px -15px; }
@@ -199,12 +199,12 @@ div#submenu { position:relative;height:43px;border-radius:3px;-webkit-border-rad
 
 /* Submenu -> Welcome text */
 
-div#submenu .welcome-text { font-size:15px;color:#fff;font-family:Francois One;padding:14px 0px 0px 20px; }
+div#submenu .welcome-text { font-size:15px;color:#fff;font-family:Arial, Helvetica, sans-serif;padding:14px 0px 0px 20px; }
 
 /* Submenu -> Search */
 
 div#submenu #search { padding:0px 9px 0px 0px; }
-div#submenu #search p { font-family:Francois One;font-size:15px;padding:13px 9px 0px 9px; }
+div#submenu #search p { font-family:Arial, Helvetica, sans-serif;font-size:15px;padding:13px 9px 0px 9px; }
 div#submenu #search .search-text { display:block;padding:0px 4px 0px 10px;margin:11px 0px 0px 0px;border:0px;width:110px;height:25px;background:url(../images/search-text.png) no-repeat;color:#808080;line-height:24px; }
 div#submenu #search .search-submit { display:block;padding:0px;margin:11px 0px 0px 0px;border:0px;width:26px;height:25px;background:url(../images/search-submit.png) no-repeat;cursor:pointer; }
  
@@ -632,8 +632,8 @@ table.list .asc { padding-right: 15px;background: url('../images/asc.png') right
 table.list .desc { padding-right: 15px;background: url('../images/desc.png') right center no-repeat; }
 .pagination { border-top: 1px solid #f2f2f2;padding-top: 14px;display: inline-block;width: 100%;color: #808080;position:relative;margin-bottom:-10px; }
 .pagination .links { float: left; }
-.pagination .links a { display: inline-block;padding: 0px 2px;text-decoration: none;color: #808080;font-weight: normal;font-family:Francois One;font-size:15px; }
-.pagination .links b { display: inline-block;padding:0px 2px;font-weight: normal;text-decoration: none;color: #ff6d00;font-family:Francois One;font-size:15px; }
+.pagination .links a { display: inline-block;padding: 0px 2px;text-decoration: none;color: #808080;font-weight: normal;font-family:Arial, Helvetica, sans-serif;font-size:15px; }
+.pagination .links b { display: inline-block;padding:0px 2px;font-weight: normal;text-decoration: none;color: #ff6d00;font-family:Arial, Helvetica, sans-serif;font-size:15px; }
 .pagination .results { float: right;padding-top: 3px; }
 
 

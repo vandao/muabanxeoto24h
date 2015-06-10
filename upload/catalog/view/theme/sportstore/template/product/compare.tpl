@@ -127,7 +127,8 @@
     <tr>
       <td></td>
       <?php foreach ($products as $product) { ?>
-      <td><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></td>
+      <!-- VAN DAO -->
+      <td><a onclick="window.location.href='<?php echo $products[$product['product_id']]['href']; ?>'" class="button"><span><?php echo $button_cart; ?></span></a></td>
       <?php } ?>
     </tr>
     <tr>
