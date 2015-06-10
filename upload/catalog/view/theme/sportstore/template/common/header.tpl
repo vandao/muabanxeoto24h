@@ -264,7 +264,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 	<?php if($logo) { ?>
 	<!-- Logo -->
 	
-	<h1 class="float-left"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>" /></a></h1>
+	<h1 class="float-left"><a href="/"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>" /></a></h1>
 	<?php } ?>
 	
 	<!-- Shopping cart & menu -->
