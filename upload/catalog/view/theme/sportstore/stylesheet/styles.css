@@ -776,3 +776,7 @@ table.radio label {
 .wishlist-info tbody .action img {
 	cursor: pointer;
 }
+
+div.cart span {
+	padding-top: 4px;
+}
