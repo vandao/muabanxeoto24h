@@ -777,6 +777,10 @@ table.radio label {
 	cursor: pointer;
 }
 
+div.cart {
+	 text-align: center;
+}
+
 div.cart span {
 	padding-top: 4px;
 }

@@ -264,7 +264,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 	<?php if($logo) { ?>
 	<!-- Logo -->
 	
-	<h1 class="float-left"><a href="/"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>" /></a></h1>
+	<h2 class="float-left"><a href="/"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>" /></a></h2>
 	<?php } ?>
 	
 	<!-- Shopping cart & menu -->
@@ -276,7 +276,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 		<!-- Contact -->
 		
 		<!-- Van Dao -->
-		<h3 class="white" style="padding-top:10px; margin-right: 10px">
+		<h3 class="white" style="padding-top:10px; margin-right: 10px; font-size: 16px;">
  		<?php if (! empty ( $gsm )) {	?>
 		<!-- GSM --><div style="padding-top: 5px;">gsm: <span class="custom-orange"><?php	echo $gsm; ?></span></div>
 		<?php	} ?>
