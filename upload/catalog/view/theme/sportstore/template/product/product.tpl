@@ -55,7 +55,7 @@
           <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
           <?php } ?>
         </h3>
-        <span class="price-tax">Chưa gồm thuế</span><br />
+        <span class="price-tax">Đã bao gồm thuế VAT</span><br />
         <?php if ($discounts) { ?>
         <br />
         <div class="discount">
