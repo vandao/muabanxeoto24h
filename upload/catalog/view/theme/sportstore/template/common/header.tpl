@@ -4,12 +4,19 @@
 <head>
 <title><?php echo $title; ?></title>
 <base href="<?php echo $base; ?>" />
+
 <?php if ($description) { ?>
 <meta name="description" content="<?php echo $description; ?>" />
+<?php } else { ?>
+<meta name="description" content="<?php echo "Mua Ban Xe Oto 24h, Chevrolet Viet Long, Dich vu sua chua, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; ?>" />
 <?php } ?>
+
 <?php if ($keywords) { ?>
 <meta name="keywords" content="<?php echo $keywords; ?>" />
+<?php } else { ?>
+<meta name="keywords" content="<?php echo "Mua Ban Xe Oto 24h, Chevrolet Viet Long, Dich vu sua chua, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; ?>" />
 <?php } ?>
+
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />
 <?php } ?>
