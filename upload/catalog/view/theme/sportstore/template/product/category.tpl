@@ -90,7 +90,7 @@
         <?php } ?>
         <?php if ($product['tax']) { ?>
         <br />
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+        <span class="price-tax">Đã bao gồm thuế VAT</span>
         <?php } ?>
       </div>
       <?php } ?>
