@@ -46,7 +46,7 @@ class ModelToolOnlinePlus extends Model {
 	}
 	
 // Delete old entries.  Currently set to 3 days (60 * 60 * 24 * 3 = 259200) - Change as required.
-// Delete old entries.  Currently set to 3 days (60 * 60 * 24 * 7 = 259200) - Change as required.
+// Delete old entries.  Currently set to 3 days (60 * 60 * 24 * 7 = 604800) - Change as required.
 	$this->db->query("DELETE FROM `" . DB_PREFIX . "online_plus` WHERE (UNIX_TIMESTAMP(`time_arrived`) + 604800) < UNIX_TIMESTAMP(NOW())");
 	
 	if ($enable_bots) {
@@ -80,7 +80,7 @@ class ModelToolOnlinePlus extends Model {
 	}
 
   	$existing_session = false;
-  	$thirty_ago_timestamp = strtotime("now") - (86400); //1800
+  	$thirty_ago_timestamp = strtotime("now") - (604800); //1800 (60 * 60 * 24 * 7 = 604800)
   	$thirty_mins_ago = date('Y-m-d H:i:s', $thirty_ago_timestamp);	
 	$ip_array = explode ('.',$ip);
 // changed ip_start to the first 3 octets because of dropping the browser sting search below.
