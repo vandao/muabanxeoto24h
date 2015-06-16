@@ -207,3 +207,5 @@ admin/model/design/banner.php
 admin/view/template/module/carousel.tpl
 admin/controller/module/customFooter.php
 admin/view/template/module/customFooter.tpl
+admin/controller/module/visitor_counter.php
+admin/view/template/module/visitor_counter.tpl
