@@ -1515,3 +1515,13 @@
 2015-06-16 10:30:28 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
 2015-06-16 10:30:30 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
 2015-06-16 10:30:30 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:41:32 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:41:32 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:03 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:03 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:06 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:06 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:55 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:44:55 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:48:31 - PHP Notice:  Undefined variable: customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
+2015-06-16 10:48:31 - PHP Notice:  Undefined variable: text_customer_blacklist in /home/vandao/web/muabanxeoto24h/upload/vqmod/vqcache/vq2-admin_view_template_common_header.tpl on line 117
