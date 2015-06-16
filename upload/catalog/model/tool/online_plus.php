@@ -80,7 +80,7 @@ class ModelToolOnlinePlus extends Model {
 	}
 
   	$existing_session = false;
-  	$thirty_ago_timestamp = strtotime("now") - (1800);
+  	$thirty_ago_timestamp = strtotime("now") - (86400); //1800
   	$thirty_mins_ago = date('Y-m-d H:i:s', $thirty_ago_timestamp);	
 	$ip_array = explode ('.',$ip);
 // changed ip_start to the first 3 octets because of dropping the browser sting search below.
