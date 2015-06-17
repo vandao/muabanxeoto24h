@@ -209,3 +209,10 @@ admin/controller/module/customFooter.php
 admin/view/template/module/customFooter.tpl
 admin/controller/module/visitor_counter.php
 admin/view/template/module/visitor_counter.tpl
+catalog/controller/product/manufacturer.php
+catalog/language/vietnamese/product/manufacturer.php
+catalog/view/theme/sportstore/template/product/manufacturer_info.tpl
+catalog/controller/product/special.php
+catalog/language/vietnamese/product/special.php
+catalog/view/theme/sportstore/template/product/special.tpl
+admin/controller/common/logout.php
