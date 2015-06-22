@@ -116,9 +116,6 @@
 			        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>" itemprop="brand"><?php echo $manufacturer; ?></a><br />
 			        <?php } ?>
 			        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
-			        <?php if ($reward) { ?>
-			        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
-			        <?php } ?>
 			        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
 			      <?php if ($price) { ?>
 			      <div class="price">
@@ -128,12 +125,7 @@
 			        <span class="price-new"><?php echo $text_price; ?> <span itemprop="price"><?php echo $special; ?></span></span> <span class="price-old"><?php echo $price; ?></span>
 			        <?php } ?>
 			        <br />
-			        <?php if ($tax) { ?>
-			        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
-			        <?php } ?>
-			        <?php if ($points) { ?>
-			        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
-			        <?php } ?>
+			        <span class="price-tax">Đã bao gồm thuế VAT</span><br />
 			        <?php if ($discounts) { ?>
 			        <br />
 			        <div class="discount">
@@ -145,22 +137,6 @@
 			      </div>
 			      <?php } ?>
 			     </div>
-			     
-			     <?php if ($profiles): ?>
-			     <div class="options">
-			         <h2><span class="required">*</span><?php echo $text_payment_profile ?></h2>
-			         <div class="option">
-				         <select name="profile_id">
-				             <option value=""><?php echo $text_select; ?></option>
-				             <?php foreach ($profiles as $profile): ?>
-				             <option value="<?php echo $profile['profile_id'] ?>"><?php echo $profile['name'] ?></option>
-				             <?php endforeach; ?>
-				         </select>
-				         <br />
-				         <span id="profile-description"></span>
-			         </div>
-			     </div>
-			     <?php endif; ?>
 			     
 			      <?php if ($options) { ?>
 			      <div class="options">
@@ -298,27 +274,7 @@
 			      </div>
 			      <?php } ?>
 			      <div class="cart">
-			        <div class="add-to-cart clearfix">
-			          <p><?php echo $text_qty; ?></p>
-			          <div class="quantity">
-				          <input type="text" name="quantity" id="quantity_wanted" size="2" value="<?php echo $minimum; ?>" />
-				          <a href="#" id="q_up"><i class="icon-plus"></i></a>
-				          <a href="#" id="q_down"><i class="icon-minus"></i></a>
-			          </div>
-			          <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
-			          &nbsp;
-			          <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-			        </div>
 			        
-			        <div class="links">
-			        	<a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a>
-			        	<a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a>
-			        </div>
-			         
-			        <?php if ($minimum > 1) { ?>
-			        <div class="minimum"><?php echo $text_minimum; ?></div>
-			        <?php } ?>
-			      </div>
 			      <?php if ($review_status) { ?>
 			      <div class="review">
 			      	<span itemprop="review" class="hidden" itemscope itemtype="http://data-vocabulary.org/Review-aggregate">

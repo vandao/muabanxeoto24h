@@ -141,12 +141,7 @@
 						<?php } ?>
 					</div>
 					
-					<div class="add-to-cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
-					
-					<ul>
-						<li>+ <a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php if($this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to compare'; } ?></a></li>
-						<li>+ <a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php if($this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?></a></li>
-					</ul>
+					<div class="add-to-cart"><a onclick="window.location.href='<?php echo $product['href']; ?>'" class="button"><?php echo $button_cart; ?></a></div>
 				</div>
 			</div>
 		</div>

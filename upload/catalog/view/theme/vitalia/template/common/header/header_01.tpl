@@ -100,7 +100,58 @@
 							
 							<!-- Header Right -->
 							<div class="col-sm-4" id="header-right">
-								
+								<?php
+									$customfooter = $this->theme_options->get( 'customfooter' );
+									$language_id = $this->config->get( 'config_language_id' );
+								?>
+								<?php if($customfooter[$language_id]['contact_status'] == '1') { ?>
+									<!-- Contact -->
+										<ul class="contact-us clearfix">
+											<?php if($customfooter[$language_id]['contact_phone'] != '' || $customfooter[$language_id]['contact_phone2'] != '') { ?>
+											<!-- Phone -->
+											<li style="margin-bottom: -15px;">
+												<i class="icon-mobile-phone"></i>
+												<p style="text-align: left;">
+													<?php if($customfooter[$language_id]['contact_phone'] != '') { ?>
+														<?php echo $customfooter[$language_id]['contact_phone']; ?><br>
+													<?php } ?>
+													<?php if($customfooter[$language_id]['contact_phone2'] != '') { ?>
+														<?php echo $customfooter[$language_id]['contact_phone2']; ?>
+													<?php } ?>
+												</p>
+											</li>
+											<?php } ?>
+
+											<?php if($customfooter[$language_id]['contact_email'] != '' || $customfooter[$language_id]['contact_email2'] != '') { ?>
+											<li style="margin-bottom: -15px;">
+												<i class="icon-envelope"></i>
+												<p style="text-align: left;">
+													<?php if($customfooter[$language_id]['contact_email'] != '') { ?>
+														<span><?php echo $customfooter[$language_id]['contact_email']; ?></span><br>
+													<?php } ?>
+													<?php if($customfooter[$language_id]['contact_email2'] != '') { ?>
+														<span><?php echo $customfooter[$language_id]['contact_email2']; ?></span>
+													<?php } ?>
+												</p>
+											</li>
+											<?php } ?>
+
+											<?php if($customfooter[$language_id]['contact_skype'] != '' || $customfooter[$language_id]['contact_skype2'] != '') { ?>
+											<!-- Phone -->
+											<li style="margin-bottom: -15px;">
+												<i class="icon-skype"></i>
+												<p style="text-align: left;">
+													<?php if($customfooter[$language_id]['contact_skype'] != '') { ?>
+														<?php echo $customfooter[$language_id]['contact_skype']; ?><br>
+													<?php } ?>
+													<?php if($customfooter[$language_id]['contact_skype2'] != '') { ?>
+														<?php echo $customfooter[$language_id]['contact_skype2']; ?>
+													<?php } ?>
+												</p>
+											</li>
+											<?php } ?>
+										</ul>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
@@ -119,7 +170,7 @@
 								<div class="megamenuToogle-pattern">
 									<div class="container">
 										<div><span></span><span></span><span></span></div>
-										Navigation
+										Menu
 									</div>
 								</div>
 							</div>

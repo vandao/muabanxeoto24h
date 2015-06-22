@@ -27,6 +27,8 @@ $modules = new Modules($this->registry);
 	<?php } ?>
 	<?php if ($keywords) { ?>
 	<meta name="keywords" content="<?php echo $keywords; ?>" />
+	<?php } else { ?>
+	<meta name="keywords" content="<?php echo "Mua Ban Xe Oto 24h, Chevrolet Viet Long, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; ?>" />
 	<?php } ?>
 	
 	<?php if ($icon) { ?>
@@ -380,6 +382,20 @@ $modules = new Modules($this->registry);
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="catalog/view/theme/<?php echo $this->config->get( 'config_template' ); ?>/js/respond.min.js"></script>
 	<![endif]-->
+
+	<!-- Begin Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-43058760-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->
+
 </head>	
 <body>
 <div class="<?php if($this->theme_options->get( 'main_layout' ) == 2) { echo 'fixed-body'; } else { echo 'standard-body'; } ?>">

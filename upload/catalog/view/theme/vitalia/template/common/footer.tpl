@@ -200,7 +200,7 @@ if($this->registry->has('theme_options') == true) {
 					OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 					Please donate via PayPal to donate@opencart.com
 					//-->
-					<p><?php echo "Mua Ban Xe Oto 24h © 2015<br>Chevrolet Viet Long, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; //echo $powered; ?></p>
+					<p><?php echo "Mua Ban Xe Oto 24h © " . date("Y"). "<br>Chevrolet Viet Long, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; //echo $powered; ?></p>
 					<!--
 					OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 					Please donate via PayPal to donate@opencart.com

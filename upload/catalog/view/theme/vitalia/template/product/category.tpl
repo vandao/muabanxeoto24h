@@ -55,8 +55,6 @@
   <!-- Filter -->
   <div class="product-filter clearfix">
   	<div class="options">
-  		<div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
-  		
   		<div class="button-group display" data-toggle="buttons-radio">
   			<button id="grid" <?php if($this->theme_options->get('default_list_grid') == '1') { echo 'class="active"'; } ?> rel="tooltip" title="Grid" onclick="display('grid');"><i class="icon-th-large"></i></button>
   			<button id="list" <?php if($this->theme_options->get('default_list_grid') != '1') { echo 'class="active"'; } ?> rel="tooltip" title="List" onclick="display('list');"><i class="icon-th-list"></i></button>
@@ -140,12 +138,7 @@
   						<?php } ?>
   					</div>
   					
-  					<div class="add-to-cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
-  					
-  					<ul>
-  						<li>+ <a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php if($this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to compare'; } ?></a></li>
-  						<li>+ <a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php if($this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?></a></li>
-  					</ul>
+  					<div class="add-to-cart"><a onclick="window.location.href='<?php echo $product['href']; ?>'" class="button"><?php echo $button_cart; ?></a></div>
   				</div>
   			</div>
   		</div>

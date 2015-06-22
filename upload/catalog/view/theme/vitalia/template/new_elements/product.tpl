@@ -1,5 +1,5 @@
 <!-- Product -->
-<div class="product clearfix <?php if($this->theme_options->get( 'hover_product' ) != '0') { echo 'product-hover'; } ?>">
+<div class="product clearfix">
 	<div class="left">
 		<?php if ($product['thumb']) { ?>
 		<?php if($product['special'] && $this->theme_options->get( 'display_text_sale' ) != '0') { ?>
@@ -35,18 +35,8 @@
 		<?php } ?>
 		<?php if($this->theme_options->get( 'display_add_to_compare' ) != '0' || $this->theme_options->get( 'display_add_to_wishlist' ) != '0' || $this->theme_options->get( 'display_add_to_cart' ) != '0') { ?>
 		<div class="only-hover">
-			<?php if($this->theme_options->get( 'display_add_to_compare' ) != '0' || $this->theme_options->get( 'display_add_to_wishlist' ) != '0') { ?>
-			<ul>
-				<?php if($this->theme_options->get( 'display_add_to_compare' ) != '0') { ?>
-				<li><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><span>+</span> <?php if($this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_compare_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to compare'; } ?></a></li>
-				<?php } ?>
-				<?php if($this->theme_options->get( 'display_add_to_wishlist' ) != '0') { ?>
-				<li><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><span>+</span> <?php if($this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ) != '') { echo $this->theme_options->get( 'add_to_wishlist_text', $this->config->get( 'config_language_id' ) ); } else { echo 'Add to wishlist'; } ?></a></li>
-				<?php } ?>
-			</ul>
-			<?php } ?>
 			<?php if($this->theme_options->get( 'display_add_to_cart' ) != '0') { ?>
-			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a>
+			<a onclick="window.location.href='<?php echo $product['href']; ?>'" class="button"><?php echo $button_cart; ?></a>
 			<?php } ?>
 		</div>
 		<?php } ?>
