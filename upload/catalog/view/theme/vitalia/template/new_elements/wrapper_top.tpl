@@ -18,12 +18,6 @@
 						<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
 						<?php } ?>
 					</ul>
-					<h2 id="title-page"><?php echo $heading_title; ?>
-						<?php if(isset($weight)) { if ($weight) { ?>
-						&nbsp;(<?php echo $weight; ?>)
-						<?php } } ?>
-					</h2>
-					<div class="strip-line"></div>
 				</div>
 			</div>
 		</div>

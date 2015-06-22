@@ -3,6 +3,17 @@
 
   <?php if ($thumb || $description) { ?>
   <div class="category-info clearfix">
+    <div class="breadcrumb fixed">
+      <div class="container">
+          <h2 id="title-page"><?php echo $heading_title; ?>
+            <?php if(isset($weight)) { if ($weight) { ?>
+            &nbsp;(<?php echo $weight; ?>)
+            <?php } } ?>
+          </h2>
+          <div class="strip-line"></div>
+      </div>
+    </div>
+    
     <?php if ($thumb) { ?>
     <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
     <?php } ?>
