@@ -163,7 +163,7 @@ class ControllerProductProduct extends Controller {
 		$this->load->model('catalog/product');
 		
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-		
+
 		if ($product_info) {
 			$url = '';
 			
@@ -299,21 +299,18 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$this->data['thumb'] = '';
 			}
+			$this->document->addFBMeta('og:image', str_replace(" ", "%20", $this->data['popup']) );
 			
 			$this->data['images'] = array();
 			
 			$results = $this->model_catalog_product->getProductImages($this->request->get['product_id']);
-			
+
 			foreach ($results as $result) {
 				$this->data['images'][] = array(
 					'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
 					'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'))
 				);
-
-				$this->document->addFBMeta('og:image', str_replace(" ", "%20", $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'))) );
-			}	
-
-
+			}
 						
 			if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
 				$this->data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
