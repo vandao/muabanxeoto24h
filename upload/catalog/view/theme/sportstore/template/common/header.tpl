@@ -4,7 +4,7 @@
 <head>
 <title><?php echo $title; ?></title>
 <meta property="og:title" content="<?php echo $title; ?>" />
-<meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>" />
+<meta property="og:url" content="<?php echo $base; ?>" />
 <base href="<?php echo $base; ?>" />
 
 <?php foreach ($this->document->getFBMeta() as $fbMeta) { ?>
