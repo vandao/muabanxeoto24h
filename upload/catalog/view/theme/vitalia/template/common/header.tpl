@@ -390,9 +390,8 @@ $modules = new Modules($this->registry);
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-43058760-2', 'auto');
+	  ga('create', 'UA-64444234-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 	<!-- End Google Analytics -->
 
