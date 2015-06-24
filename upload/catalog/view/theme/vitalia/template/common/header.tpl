@@ -15,6 +15,7 @@ $modules = new Modules($this->registry);
 <head>
 	<title><?php echo $title; ?></title>
 	<meta property="og:title" content="<?php echo $title; ?>" />
+	<meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>" />
 	<base href="<?php echo $base; ?>" />
 
 	<!-- Meta -->
