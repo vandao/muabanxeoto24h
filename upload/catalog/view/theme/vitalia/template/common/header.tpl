@@ -14,6 +14,7 @@ $modules = new Modules($this->registry);
 <!--[if !IE]><!--> <html lang="<?php echo $lang; ?>" class="<?php if($this->theme_options->get( 'responsive_design' ) == '0') { echo 'no-'; } ?>responsive"> <!--<![endif]-->  
 <head>
 	<title><?php echo $title; ?></title>
+	<meta property="og:title" content="<?php echo $title; ?>" />
 	<base href="<?php echo $base; ?>" />
 
 	<!-- Meta -->
@@ -22,9 +23,16 @@ $modules = new Modules($this->registry);
 	<?php if($this->theme_options->get( 'responsive_design' ) != '0') { ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php } ?>
+
+	<?php foreach ($this->document->getFBMeta() as $fbMeta) { ?>
+	<meta property="<?php echo $fbMeta['property'] ?>" content="<?php echo $fbMeta['content']; ?>" />
+	<?php } ?>
+
 	<?php if ($description) { ?>
 	<meta name="description" content="<?php echo $description; ?>" />
+	<meta property="og:description" content="<?php echo $description; ?>" />
 	<?php } ?>
+
 	<?php if ($keywords) { ?>
 	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<?php } else { ?>

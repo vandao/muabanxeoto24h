@@ -3,10 +3,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <title><?php echo $title; ?></title>
+<meta property="og:title" content="<?php echo $title; ?>" />
 <base href="<?php echo $base; ?>" />
+
+<?php foreach ($this->document->getFBMeta() as $fbMeta) { ?>
+	<meta property="<?php echo $fbMeta['property'] ?>" content="<?php echo $fbMeta['content']; ?>" />
+<?php } ?>
 
 <?php if ($description) { ?>
 <meta name="description" content="<?php echo $description; ?>" />
+<meta property="og:description" content="<?php echo $description; ?>" />
 <?php } else { ?>
 <meta name="description" content="<?php echo "Mua Ban Xe Oto 24h, Chevrolet Viet Long, Dich vu sua chua, Phu tung, Phu Kien chinh hang, Cruze, Spark, Captiva, Aveo, Colorado, Orlando"; ?>" />
 <?php } ?>

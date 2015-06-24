@@ -6,6 +6,7 @@ class Document {
 	private $links = array();		
 	private $styles = array();
 	private $scripts = array();
+	public $fbMeta = array();
 	
 	public function setTitle($title) {
 		$this->title = $title;
@@ -30,6 +31,17 @@ class Document {
 	public function getKeywords() {
 		return $this->keywords;
 	}
+
+	public function addFBMeta($property , $content ) {
+      $this->fbMeta[] = array(
+         'property'   => $property,
+         'content' => $content
+      );         
+   }
+   
+   public function getFBMeta () {
+      return $this->fbMeta;
+   }
 	
 	public function addLink($href, $rel) {
 		$this->links[md5($href)] = array(
