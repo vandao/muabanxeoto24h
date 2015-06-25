@@ -383,26 +383,12 @@
   <div id="tab-description" class="tab-content" itemprop="description"><?php echo $description; ?></div>
   <?php if ($attribute_groups) { ?>
   <div id="tab-attribute" class="tab-content">
-    <table class="attribute" cellspacing="0">
-      <?php foreach ($attribute_groups as $attribute_group) { ?>
-      <thead>
-        <tr>
-          <td colspan="2"><?php echo $attribute_group['name']; ?></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="2">
-          	<?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-          		<div>
-          			<?php echo html_entity_decode($attribute['text']); ?>
-          		</div>
-          	<?php } ?>
-          </td>
-        </tr>
-      </tbody>
-      <?php } ?>
-    </table>
+	  <?php foreach ($attribute_groups as $attribute_group) { ?>
+		    <h2><?php echo $attribute_group['name']; ?></h2>
+	  	<?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+				<?php echo html_entity_decode($attribute['text']); ?>
+	  	<?php } ?>
+	  <?php } ?>
   </div>
   <?php } ?>
   <?php if ($review_status) { ?>
