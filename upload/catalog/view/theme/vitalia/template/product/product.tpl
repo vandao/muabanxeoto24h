@@ -391,12 +391,15 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
         <tr>
-          <td><?php echo $attribute['name']; ?></td>
-          <td><?php echo $attribute['text']; ?></td>
+          <td colspan="2">
+          	<?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+          		<div>
+          			<?php echo html_entity_decode($attribute['text']); ?>
+          		</div>
+          	<?php } ?>
+          </td>
         </tr>
-        <?php } ?>
       </tbody>
       <?php } ?>
     </table>
