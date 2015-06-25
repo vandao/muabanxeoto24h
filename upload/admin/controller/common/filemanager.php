@@ -103,7 +103,12 @@ class ControllerCommonFileManager extends Controller {
 			'.jpg',
 			'.jpeg',
 			'.png',
-			'.gif'
+			'.gif',
+			'.pdf',
+			'.doc',
+			'.docx',
+			'.xls',
+			'.xlsx'
 		);
 		
 		$files = glob(rtrim($directory, '/') . '/*');
@@ -443,7 +448,10 @@ class ControllerCommonFileManager extends Controller {
 					'image/png',
 					'image/x-png',
 					'image/gif',
-					'application/x-shockwave-flash'
+					'application/x-shockwave-flash',
+					'application/pdf',
+					'application/msword',
+					'application/vnd.ms-excel'
 				);
 						
 				if (!in_array($this->request->files['image']['type'], $allowed)) {
@@ -455,7 +463,12 @@ class ControllerCommonFileManager extends Controller {
 					'.jpeg',
 					'.gif',
 					'.png',
-					'.flv'
+					'.flv',
+					'.pdf',
+					'.doc',
+					'.docx',
+					'.xls',
+					'.xlsx'
 				);
 						
 				if (!in_array(strtolower(strrchr($filename, '.')), $allowed)) {

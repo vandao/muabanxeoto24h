@@ -137,6 +137,13 @@
 			      </div>
 			      <?php } ?>
 			     </div>
+
+			      <?php if ($gift && $gift != "") { ?>
+			      <div class="options">
+			        <h2><?php echo "Quà tặng"; ?></h2>
+			        <div><?php echo $gift; ?></div>
+			      </div>
+			      <?php } ?>
 			     
 			      <?php if ($options) { ?>
 			      <div class="options">

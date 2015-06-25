@@ -451,6 +451,8 @@ class ControllerProductProduct extends Controller {
 					);
 				}
 			}
+
+			$this->data['gift'] = html_entity_decode($product_info['gift'], ENT_QUOTES, 'UTF-8');
 			
 			$this->model_catalog_product->updateViewed($this->request->get['product_id']);
 			
