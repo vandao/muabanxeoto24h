@@ -220,6 +220,9 @@
 											<?php } ?>
 										</li>
 										<?php } ?>
+										<li>
+											<a href="/index.php?route=information/news"><span><strong>Tin Tức</strong></span></a>
+										</li>
 									</ul>
 								</div>
 							</div>
