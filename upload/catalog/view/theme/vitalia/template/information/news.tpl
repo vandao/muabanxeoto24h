@@ -16,7 +16,7 @@
     <h1><?php echo $heading_title; ?></h1>
     <?php foreach ($news_data as $news) { ?>
      <div class="col-sm-3">
-        <a href="<?php echo $news['href']; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $news['image']; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a>
+        <a href="<?php echo $news['href']; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $news['image']; ?>" alt="<?php echo $news['title']; ?>" id="image" /></a>
       </div>
       <div class="col-sm-9">
         <h2 style="font-weight: bold"> <a href="<?php echo $news['href']; ?>"> <?php echo $news['title']; ?></a></h2>
