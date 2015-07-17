@@ -180,7 +180,7 @@
 							<div class="megamenu-pattern">
 								<div class="container">
 									<ul class="megamenu">
-										<li class="home"><a href="<?php echo $home; ?>"><i class="icon-home"></i></a></li>
+										<li class="home"><a href="/"><i class="icon-home"></i></a></li>
 										<?php foreach ($categories as $category) { ?>
 										<?php if ($category['children']) { ?>
 										<li class="with-sub-menu hover"><p class="close-menu"></p>
