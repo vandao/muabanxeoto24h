@@ -40,22 +40,23 @@
 							<!-- Header Left -->
 							<div class="col-sm-4" id="header-left">
 								<?php if ($logo) { ?>
-								<div class="col-sm-5" style="text-align: center;">
-									<a href="/">
-										<img src="image/data/icon_chevy_off.png">
-										<div style="text-align: center; font-weight: bold;">
-											<span>CHEVROLET VIỆT LONG</span>
+									<div class="row">
+										<div class="col-sm-6" style="text-align: center;">
+											<a href="/">
+												<img src="image/data/icon_chevy_off.png">
+											</a>
 										</div>
-									</a>
+										<?php } ?>
+										<!-- Logo -->
+										<div class="col-sm-6" style="text-align: center;">
+											<a href="/">
+												<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
+											</a>
+									</div>
 								</div>
-								<?php } ?>
-								<!-- Logo -->
-								<div class="col-sm-7" style="text-align: center;">
-									<a href="/">
-											<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
-										</a>
+								<div class="row" style="text-align: center; font-weight: bold; font-size: 24px;">
+									<span>CHEVROLET VIỆT LONG</span>
 								</div>
-
 								
 							</div>
 							
