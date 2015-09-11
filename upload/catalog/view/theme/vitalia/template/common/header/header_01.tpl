@@ -36,34 +36,28 @@
 				<div class="shadow"></div>
 				<div class="pattern">
 					<div class="container">
-						<div class="row">
+						<div class="row" style="text-align: center;">
 							<!-- Header Left -->
 							<div class="col-sm-4" id="header-left">
-								<?php if ($logo) { ?>
-									<div class="row">
-										<div class="col-sm-6" style="text-align: center;">
-											<a href="/">
-												<img src="image/data/icon_chevy_off.png">
-											</a>
-										</div>
-										<?php } ?>
-										<!-- Logo -->
-										<div class="col-sm-6" style="text-align: center;">
-											<a href="/">
-												<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
-											</a>
+								<!-- Logo -->
+								<a href="/">
+									<img src="image/data/icon_chevy_off.png" style="width: 43%;">
+									<div style="font-weight: bold; font-size: 18px;">
+										<span>CHEVROLET VIỆT LONG</span>
 									</div>
-								</div>
-								<div class="row" style="text-align: center; font-weight: bold; font-size: 24px;">
-									<span>CHEVROLET VIỆT LONG</span>
-								</div>
-								
+								</a>
 							</div>
 							
 							<!-- Header Center -->
-							<div class="col-sm-4" id="header-center">									
+							<div class="col-sm-4" id="header-center">
+								<?php if ($logo) { ?>
+								<a href="/">
+									<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
+								</a>
+								<?php } ?>
+
 								<!-- Search -->
-								<div class="search_form">
+								<div class="search_form" style="display: none">
 									<div class="button-search"></div>
 									<input type="text" class="input-block-level search-query" name="search" placeholder="<?php echo $text_search; ?>" id="search_query" value="<?php echo $search; ?>" />
 									<div id="autocomplete-results" class="autocomplete-results"></div>
